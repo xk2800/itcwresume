@@ -13,7 +13,7 @@
 
   def notify_resume_upload(resume)
     send_message("#{resume.student.name} has uploaded a new resume "\
-      "(rev #{resume.reuploads}). #{Resume.latest_submissions.pending.count} pending. #{Resume.latest_submissions.approved.count} currently approved. Vet now at https://resumetcd.herokuapp.com")
+      "(rev #{resume.reuploads}). #{Resume.latest_submissions.pending.count} pending. #{Resume.latest_submissions.approved.count} currently approved. Vet now at https://ijeresume.herokuapp.com")
   end
 
   def notify_resume_approved(resume)
